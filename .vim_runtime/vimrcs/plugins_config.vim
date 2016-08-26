@@ -161,6 +161,9 @@ func! SyntasticCheckCoffeescript()
 endfunc
 nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
+" My setting
+    let g:syntastic_c_checkers = []
+    let g:syntastic_cpp_checkers = []
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
