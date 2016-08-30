@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH="$PATH:/home/fff000/Documents/klee/build/Release+Asserts/bin/"
+PATH="$PATH:/home/fff000/Documents/ytt/NewSP/SRacer/build"
+. /etc/zsh_command_not_found
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/fff000/.oh-my-zsh
