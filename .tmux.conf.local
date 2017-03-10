@@ -240,3 +240,6 @@ tmux_conf_theme_clock_style='24'
 
 # move status line to top
 #set -g status-position top
+
+run-shell ~/ConfigFiles/tmux-resurrect/resurrect.tmux
+
