@@ -25,7 +25,7 @@ Plugin 'L9'
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -53,6 +53,11 @@ let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <F9> :YcmCompleter FixIt<CR>
+
+set completeopt=longest,menu
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
 set runtimepath+=~/.vim_runtime
 
