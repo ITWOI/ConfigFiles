@@ -55,7 +55,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git)
-plugins=(git vi-mode history-substring-search tmux)
+plugins=(autojump git vi-mode history-substring-search tmux)
 
 source $ZSH/oh-my-zsh.sh
 
