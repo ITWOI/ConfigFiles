@@ -4,8 +4,8 @@ sudo apt-get install vim tmux zsh curl autojump -y
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
+ln -s -f .tmux/.tmux.conf ~/
+cp .tmux/.tmux.conf.local ~/
 git clone --depth=1 https://github.com/tmux-plugins/tmux-resurrect
 
 #git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
